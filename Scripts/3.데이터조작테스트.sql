@@ -12,10 +12,17 @@ select * from title;
 
 
 insert into department values(1, '기획', 10);
+insert into department values(2, '영업', 20);
+update department set deptname = '마케팅' where deptno = 3;
+delete from department where deptno = 3;
+
 insert into employee values(4377, '이성래', 1, null, 4500000, 1);
 
 desc title;
 select tno, tname from title;
 select tno, tname from title where tno = 2;
 select deptno, deptname, floor from department;
+select deptno, deptname, floor from department where deptno = 1;
+
+
 select empno, empname, title, manager, salary, dno from employee;
