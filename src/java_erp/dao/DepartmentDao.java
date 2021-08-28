@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java_erp.dto.Department;
 
 public interface DepartmentDao {
-	ArrayList<Department> selectDepartmentbyAll();
+	ArrayList<Department> selectDepartmentByAll();
 	Department selectDepartmentByNo(Department department);
 	
 	int insertDepartment(Department department);

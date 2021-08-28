@@ -23,7 +23,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 	}
 
 	@Override
-	public ArrayList<Department> selectDepartmentbyAll() {
+	public ArrayList<Department> selectDepartmentByAll() {
 		String sql = "select deptno, deptname, floor from department";
 		ArrayList<Department> list = null;
 		try (Connection con = jdbcUtil.getConnection();

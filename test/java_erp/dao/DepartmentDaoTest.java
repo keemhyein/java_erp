@@ -27,9 +27,9 @@ public class DepartmentDaoTest {
 	}
 
 	@Test
-	public void test01SelectDepartmentbyAll() {
+	public void test01SelectDepartmentByAll() {
 		System.out.println("testSelectDepartmentbyAll()");
-		ArrayList<Department> list = dao.selectDepartmentbyAll();
+		ArrayList<Department> list = dao.selectDepartmentByAll();
 		Assert.assertNotEquals(0, list.size());
 		
 		list.stream().forEach(System.out::println);
@@ -51,7 +51,7 @@ public class DepartmentDaoTest {
 		int res = dao.insertDepartment(newDepartment);
 		Assert.assertEquals(1, res);
 		
-		test01SelectDepartmentbyAll();
+		test01SelectDepartmentByAll();
 	}
 
 	@Test
@@ -63,7 +63,7 @@ public class DepartmentDaoTest {
 		int res = dao.updateDepartment(selectDepartment);
 		Assert.assertEquals(1, res);
 		
-		test01SelectDepartmentbyAll();
+		test01SelectDepartmentByAll();
 	}
 
 	@Test
@@ -72,7 +72,7 @@ public class DepartmentDaoTest {
 		int res = dao.deleteDepartment(new Department(3));
 		Assert.assertEquals(1, res);
 		
-		test01SelectDepartmentbyAll();		
+		test01SelectDepartmentByAll();		
 	}
 
 }
