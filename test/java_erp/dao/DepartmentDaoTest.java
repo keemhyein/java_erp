@@ -14,7 +14,7 @@ import java_erp.dto.Department;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class DepartmentDaoTest {
 	private DepartmentDao dao;
-
+	
 	@Before
 	public void setUp() throws Exception {
 		dao = DepartmentDaoImpl.getInstance();

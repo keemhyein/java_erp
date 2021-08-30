@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java_erp.dao.DepartmentDao;
 import java_erp.dto.Department;
 import java_erp.util.jdbcUtil;
+//Impl은 무조건 Singleton Pattern 구현
 
 public class DepartmentDaoImpl implements DepartmentDao {
 

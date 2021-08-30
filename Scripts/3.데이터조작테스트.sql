@@ -21,8 +21,24 @@ insert into employee values(4377, '이성래', 1, null, 4500000, 1);
 desc title;
 select tno, tname from title;
 select tno, tname from title where tno = 2;
+
+-- department
 select deptno, deptname, floor from department;
-select deptno, deptname, floor from department where deptno = 1;
+select deptno, deptname, floor from department where deptno = 2;
 
+insert into department values(3, '개발', 21);
+update department set deptname = '인사' where deptno = 4;
+delete from department where deptno = 4;
 
+-- employee
+insert into employee values(1004, '석주명', 2, 4377, 4000000, 2);
+insert into employee values(1005, '장준화', null, null, 2000000, null);
+insert into employee values(1006, '김혜인', 1, 4377, 2000000, null);
+
+delete from employee where empno = 1004;
+update employee
+   set empname = '권민성', title = 1, manager = null, salary = 3000000, dno = 1
+ where empno = 1004;
 select empno, empname, title, manager, salary, dno from employee;
+select empno, empname, title, manager, salary, dno from employee where empno = 4377;
+
